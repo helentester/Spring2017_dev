@@ -10,7 +10,7 @@ from src.common import send_mail
 
 
 # 构建测试集,包含src/test_case目录下的所有以test开头的.py文件
-suite = unittest.defaultTestLoader.discover(start_dir=gl.test_case_path,pattern='test_index.py')
+suite = unittest.defaultTestLoader.discover(start_dir=gl.test_case_path,pattern='test_*.py')
 
 # 执行测试
 if __name__=="__main__":
